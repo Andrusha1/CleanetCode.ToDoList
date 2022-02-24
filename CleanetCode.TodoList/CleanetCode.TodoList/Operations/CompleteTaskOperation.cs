@@ -2,6 +2,9 @@
 {
     public class CompleteTaskOperation : IOperation
     {
-
+        public void Execute()
+        {
+            
+        }
     }
 }

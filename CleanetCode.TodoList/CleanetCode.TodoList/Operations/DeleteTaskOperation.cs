@@ -2,6 +2,9 @@
 {
     public class DeleteTaskOperation : IOperation
     {
+        public void Execute()
+        {
 
+        }
     }
 }

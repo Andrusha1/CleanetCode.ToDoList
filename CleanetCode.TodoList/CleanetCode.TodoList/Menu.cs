@@ -1,14 +1,12 @@
 ﻿using CleanetCode.TodoList.Operations;
 
-namespace CleanetCode.TodoList
+IOperation[] operations = new IOperation[]
 {
-    public class Menu
-    {
-        private IOperation[] _operations;
+    new CreateNewUserOperation(),
+    new LoginUserOperation()
+};
 
-        public Menu(IOperation[] operations)
-        {
-            _operations = operations;
-        }
-    }
+foreach (IOperation operation in operations)
+{
+    operation.Execute();
 }
