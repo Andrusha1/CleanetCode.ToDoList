@@ -6,6 +6,8 @@ namespace CleanetCode.TodoList
     {
         public static void Main()
         {
+            
+
             IOperation[] operations = new IOperation[] 
             {
                 new CreateNewUserOperation(),

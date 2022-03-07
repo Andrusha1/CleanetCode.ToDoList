@@ -1,4 +1,7 @@
-﻿namespace CleanetCode.TodoList.Operations
+﻿using CleanetCode.TodoList.Models;
+using CleanetCode.TodoList.Storages;
+
+namespace CleanetCode.TodoList.Operations
 {
     public class ShowTasksOperation : IOperation
     {
