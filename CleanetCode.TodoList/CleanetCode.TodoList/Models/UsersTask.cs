@@ -1,7 +1,11 @@
 ﻿namespace CleanetCode.TodoList.Models
 {
-    public class Task
+    public class UsersTask
     {
+        public UsersTask()
+        {
+            Id = Guid.NewGuid();
+        }
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

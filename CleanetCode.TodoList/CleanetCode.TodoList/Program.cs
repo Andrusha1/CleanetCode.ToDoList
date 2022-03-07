@@ -9,7 +9,12 @@ namespace CleanetCode.TodoList
             IOperation[] operations = new IOperation[] 
             {
                 new CreateNewUserOperation(),
-                new LoginUserOperation()
+                new CreateNewTaskOperation(),
+                new LoginUserOperation(),
+                new ShowTasksOperation(),
+                new CompleteTaskOperation(),
+                new UpdateTaskOperation(),
+                new DeleteTaskOperation()
             };
             Menu menu = new Menu(operations);
             Application application = new Application(menu);

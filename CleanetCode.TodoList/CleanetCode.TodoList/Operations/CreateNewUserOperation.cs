@@ -22,6 +22,7 @@ namespace CleanetCode.TodoList.Operations
             {
                 Console.WriteLine("User with this email already created");
             }
+            
 
             Console.WriteLine("User created successful");
         }

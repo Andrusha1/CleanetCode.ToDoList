@@ -1,4 +1,5 @@
-﻿using CleanetCode.TodoList.Models;
+﻿using System.IO;
+using CleanetCode.TodoList.Models;
 
 namespace CleanetCode.TodoList.Storages
 {
@@ -14,6 +15,7 @@ namespace CleanetCode.TodoList.Storages
 
         public static bool Create(User user)
         {
+            File.AppendAllText("Users.txt", $"{user.Email}\n");
             return _users.TryAdd(user.Email, user);
         }
     }
