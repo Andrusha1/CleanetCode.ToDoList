@@ -15,6 +15,11 @@
             while (!userQuit)
             {
                 List<string> operationNames = new List<string>();
+                //Не получается выводить имя текущего юзера.
+                if (UserSession.CurrentUser == null)
+                    operationNames.Add($"Current user: Not login");
+                else
+                    operationNames.Add($"Current user: {UserSession.CurrentUser.Email.ToString()}\n");
                 operationNames.Add("q - close program");
                 operationNames.AddRange(_menu.GetOperationNames());
 
