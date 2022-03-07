@@ -25,6 +25,17 @@ namespace CleanetCode.TodoList
             
             return operationNames.ToArray();
         }
+        //public static void LoginStart()
+        //{
+        //    for (int i = 0; i < _operations.Length; i++)
+        //    {
+        //        IOperation? operation = _operations[i];
+        //        if (operation.Name == "LoginUserOperation")
+        //        {
+        //            LoginUserOperation.Execute();
+        //        }
+        //    }
+        //}
 
         internal void Enter(int operationNumber)
         {
