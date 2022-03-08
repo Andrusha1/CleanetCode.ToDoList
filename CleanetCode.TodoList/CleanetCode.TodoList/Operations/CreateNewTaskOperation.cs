@@ -9,9 +9,9 @@ namespace CleanetCode.TodoList.Operations
 
         public void Execute()
         {
-            Console.Write("Введите название задачи\n");
+            Console.Write("Enter task name:\n");
             string? taskName = Console.ReadLine();
-            Console.Write("Введите описание задачи\n");
+            Console.Write("Enter task discription:\n");
             string? taskDescript = Console.ReadLine();
 
             UsersTask task = new UsersTask

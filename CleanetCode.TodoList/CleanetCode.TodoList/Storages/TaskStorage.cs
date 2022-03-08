@@ -12,6 +12,28 @@ namespace CleanetCode.TodoList.Storages
             return usrtask;
         }
 
+        internal void ShowTasks()
+        {
+            List<string> tasks = new List<string>();
+            if (_tasks.Count > 0)
+            {
+                foreach (var curtask in _tasks.Values)
+                {
+                    tasks.Add(curtask.Name);
+                }
+                foreach (string task in tasks)
+                    Console.WriteLine($"{task}");
+            }
+            else
+            {
+                Console.WriteLine("Task list is empty!\n");
+            }
+            
+
+            //foreach (var task in tasks)
+            //    tasks.Add($"{task}\n ");
+            //Console.WriteLine(tasks);
+        }
 
         public static bool Create(UsersTask task)
         {

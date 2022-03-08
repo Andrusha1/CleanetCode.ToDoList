@@ -17,9 +17,9 @@
                 List<string> operationNames = new List<string>();
                 //Не получается выводить имя текущего юзера.
                 if (UserSession.CurrentUser == null)
-                    operationNames.Add($"Current user: Not login");
+                    operationNames.Add($"\nCurrent user: Not login");
                 else
-                    operationNames.Add($"Current user: {UserSession.CurrentUser.Email.ToString()}\n");
+                    operationNames.Add($"\nCurrent user: {UserSession.CurrentUser.Email}\n");
                 operationNames.Add("q - close program");
                 operationNames.AddRange(_menu.GetOperationNames());
 

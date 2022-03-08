@@ -17,6 +17,10 @@ namespace CleanetCode.TodoList.Operations
             {
                 UserSession.CurrentUser = user;
             }
+            else
+            {
+                Console.WriteLine("User not found");
+            }
         }
     }
 }

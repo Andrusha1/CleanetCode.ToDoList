@@ -9,7 +9,7 @@ namespace CleanetCode.TodoList.Operations
 
         public void Execute()
         {
-            Console.WriteLine("Введите ваш email:");
+            Console.WriteLine("Enter your email:");
             string? email = Console.ReadLine();
 
             User newUser = new User

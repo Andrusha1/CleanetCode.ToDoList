@@ -9,7 +9,8 @@ namespace CleanetCode.TodoList.Operations
 
         public void Execute()
         {
-            
+            TaskStorage tasksStr = new TaskStorage();
+            tasksStr.ShowTasks();
         }
     }
 }
