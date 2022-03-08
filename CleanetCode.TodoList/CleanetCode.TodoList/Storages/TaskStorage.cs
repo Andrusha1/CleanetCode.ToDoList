@@ -28,20 +28,12 @@ namespace CleanetCode.TodoList.Storages
             {
                 Console.WriteLine("Task list is empty!\n");
             }
-            
-
-            //foreach (var task in tasks)
-            //    tasks.Add($"{task}\n ");
-            //Console.WriteLine(tasks);
         }
 
         public static bool Create(UsersTask task)
         {
-            _tasks.TryAdd(task.Name, task);
-            _tasks.TryAdd(task.Description, task);
-
             File.AppendAllText("tasks.txt", $"{task.Name}\n");
-            return _tasks.TryAdd(task.Name, task) && _tasks.TryAdd(task.Description, task);
+            return _tasks.TryAdd(task.Name, task);
         }
     }
 }
